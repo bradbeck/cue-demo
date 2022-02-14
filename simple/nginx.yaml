@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ns-fake
+  labels:
+    name: ns-fake
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: ns-fake
+  name: app-fake
+  labels:
+    app: app-fake
+spec:
+  selector:
+    matchLabels:
+      app: app-fake
+  template:
+    metadata:
+      labels:
+        app: app-fake
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80

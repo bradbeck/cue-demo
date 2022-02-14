@@ -2,28 +2,28 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: nginx
+  name: ns-org-dept-a
+  labels:
+    name: ns-org-dept-a
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: nginx
-  name: nginx-deployment
+  namespace: ns-org-dept-a
+  name: app-org-dept-a
   labels:
-    app: nginx
+    app: app-org-dept-a
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: app-org-dept-a
   template:
     metadata:
       labels:
-        app: nginx
+        app: app-org-dept-a
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
+        image: nginx
         ports:
         - containerPort: 80
-

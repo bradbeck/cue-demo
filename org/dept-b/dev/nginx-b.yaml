@@ -1,0 +1,33 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ns-org-dept-b
+  labels:
+    name: ns-org-dept-b
+    environment: dev
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: ns-org-dept-b
+  name: app-org-dept-b
+  labels:
+    app: app-org-dept-b
+    environment: dev
+spec:
+  selector:
+    matchLabels:
+      app: app-org-dept-b
+      environment: dev
+  template:
+    metadata:
+      labels:
+        app: app-org-dept-b
+        environment: dev
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
