@@ -281,11 +281,12 @@ cue export -e '{"apiVersion": "v1", "kind": "List", "items": [for x in [Namespac
 
 ## References
 
-* <https://cuelang.org/>
-* <https://github.com/cue-lang/cue>
-* <https://cuetorials.com/>
-* <https://engineering.mercari.com/en/blog/entry/20220127-kubernetes-configuration-management-with-cue/>
-* <https://engineering.mercari.com/en/blog/entry/20220122-adventures-of-using-cue-at-scale/>
-* <https://www.alibabacloud.com/blog/configure-a-new-capability-for-kubernetes-paas-in-20-minutes_597277>
-* <https://bitfieldconsulting.com/golang/cuelang-exciting>
-* <https://github.com/thesecuresoftwarefactory/ssf>
+- <https://cuelang.org/>
+- <https://github.com/cue-lang/cue>
+- <https://cuetorials.com/>
+- [A Practical guide to CUE: patterns of everyday use](https://fosdem.org/2022/schedule/event/cue_pratical_guide/)
+- <https://engineering.mercari.com/en/blog/entry/20220127-kubernetes-configuration-management-with-cue/>
+- <https://engineering.mercari.com/en/blog/entry/20220122-adventures-of-using-cue-at-scale/>
+- <https://www.alibabacloud.com/blog/configure-a-new-capability-for-kubernetes-paas-in-20-minutes_597277>
+- <https://bitfieldconsulting.com/golang/cuelang-exciting>
+- <https://github.com/thesecuresoftwarefactory/ssf>
